@@ -146,6 +146,34 @@ export default function AppPages() {
                               </div>
                               <div className="item">
                                 <span>საბითუმო კურსი</span>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                  }}
+                                >
+                                  <div className="rates direction:column">
+                                    <div className="label">ყიდვა</div>
+                                    <div
+                                      className="bank__rate"
+                                      style={{ fontWeight: "500" }}
+                                    >
+                                      {item.dgtlBuyRate}0
+                                    </div>
+                                  </div>
+                                  <div
+                                    className="rates direction:column"
+                                    style={{ marginLeft: "64px" }}
+                                  >
+                                    <div className="label">გაყიდვა</div>
+                                    <div
+                                      className="bank__rate"
+                                      style={{ fontWeight: "500" }}
+                                    >
+                                      {item.dgtlSellRate}0
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>

@@ -641,6 +641,7 @@
   font-weight: 300;
   line-height: 9px;
   margin-bottom: 13px;
+  font-family: MarkGEO;
 }
 
 .bank__rate {
@@ -656,7 +657,7 @@
   color: #ee3b37;
   font-size: 12px;
   line-height: 12px;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .diff__rate svg {
@@ -667,4 +668,8 @@
   color: currentColor;
   fill: currentColor;
   margin-right: 5px;
+}
+
+.direction\:column {
+  flex-direction: column;
 }
