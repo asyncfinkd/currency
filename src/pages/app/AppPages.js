@@ -1,8 +1,10 @@
 import React from "react";
 import { ApplicationContext } from "../../context/Application/ApplicationContext";
 import Alert from "@material-ui/lab/Alert";
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function AppPages() {
   const { Application } = React.useContext(ApplicationContext);
@@ -26,8 +28,17 @@ export default function AppPages() {
       }, 2000);
     }
   });
+
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
+      <Helmet>
+        <title>ვალუტის კურსი</title>
+      </Helmet>
       <AnimatePresence>
         {modal && (
           <Alert
@@ -53,7 +64,6 @@ export default function AppPages() {
           </Alert>
         )}
       </AnimatePresence>
-      {console.log(Application.data.currencyData.currenciesList)}
       <div className="content">
         <div className="container">
           <div className="container-main">
