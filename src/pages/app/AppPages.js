@@ -9,15 +9,7 @@ export default function AppPages() {
       <div className="content">
         <div className="container">
           <div className="container-main">
-            <div
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
+            <div className="container__center">
               <div className="container-flex__title">
                 <div className="container:flex">
                   <span className="container-flex__titleSPAN" slot="title">
@@ -149,11 +141,51 @@ export default function AppPages() {
                                   </div>
                                 </div>
                               </div>
-                              <div className="item">
+                              <div className="item__containerDisplay">
+                                <div className="item">
+                                  <div class="vertical-divisor"></div>
+                                </div>
+                                <div className="item">
+                                  <span className="item__courseSPAN">
+                                    საბითუმო კურსი
+                                  </span>
+                                  <div
+                                    style={{
+                                      display: "flex",
+                                      alignItems: "center",
+                                    }}
+                                  >
+                                    <div className="rates direction:column">
+                                      <div className="label">ყიდვა</div>
+                                      <div
+                                        className="bank__rate"
+                                        style={{ fontWeight: "500" }}
+                                      >
+                                        {item.dgtlBuyRate}0
+                                      </div>
+                                    </div>
+                                    <div
+                                      className="rates direction:column"
+                                      style={{ marginLeft: "64px" }}
+                                    >
+                                      <div className="label">გაყიდვა</div>
+                                      <div
+                                        className="bank__rate"
+                                        style={{ fontWeight: "500" }}
+                                      >
+                                        {item.dgtlSellRate}0
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="item responsive__item">
                                 <div class="vertical-divisor"></div>
                               </div>
-                              <div className="item">
-                                <span>საბითუმო კურსი</span>
+                              <div className="item responsive__item">
+                                <span className="item__courseSPAN">
+                                  საბითუმო კურსი
+                                </span>
                                 <div
                                   style={{
                                     display: "flex",

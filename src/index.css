@@ -678,3 +678,124 @@
 .container-card:last-child {
   margin: 0;
 }
+
+.container__center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item__courseSPAN {
+  font-family: MarkGEOCAPS;
+  display: flex;
+  line-height: 9px;
+  padding-bottom: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.item__containerDisplay {
+  display: none;
+}
+
+@media all and (max-width: 1216px) {
+  .container-bottom-section {
+    flex-direction: column;
+  }
+  .container-card:nth-child(1) {
+    margin: 0 !important;
+  }
+  .container-card {
+    margin: 32px 0 0 0 !important;
+  }
+  .container-flex__title {
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  .container__button[slot="calculator__btn"] {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  .container__center {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container-flex__titleSPAN[slot="title"] {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .container-main {
+    padding: 58px 24px 64px 24px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .card__currency {
+    font-size: 12px;
+    width: 36px;
+    min-width: 36px;
+  }
+}
+
+@media all and (max-width: 416px) {
+  .card__content {
+    padding: 0 25px;
+    flex-direction: column;
+  }
+  .card__head {
+    height: 21px;
+    line-height: 21px;
+    width: 100%;
+    margin: 32px 0 16px;
+    padding: 0 23px;
+  }
+  .container-card {
+    width: 272px;
+    height: 245px;
+  }
+  .vertical-divisor {
+    margin: 0;
+  }
+  .responsive__item {
+    display: none !important;
+  }
+  .item__containerDisplay > div.item:first-child {
+    display: none;
+  }
+  .item__containerDisplay > div.item {
+    margin-top: 8px;
+  }
+  .item__containerDisplay {
+    display: block;
+  }
+  .item__courseSPAN {
+    display: flex;
+    line-height: 7px;
+    padding-bottom: 11px;
+    font-family: MarkGEOCAPS;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .card__name {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .card__content > div.item span {
+    display: flex;
+    line-height: 7px;
+    color: var(--color-greyish-brown);
+    padding-bottom: 11px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
