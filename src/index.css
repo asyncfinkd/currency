@@ -424,6 +424,7 @@
   width: 100%;
   /* max-width: 1980px;
   margin: auto; */
+  margin-bottom: 32px;
 }
 
 .container-flex__titleSPAN[slot="title"] {
@@ -484,4 +485,61 @@
 .container__button[slot="calculator__btn"] svg {
   width: 16px;
   height: 16px;
+}
+
+.container-bottom-section {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.container-card {
+  margin: 0 32px 0 0;
+  font: inherit;
+  display: flex;
+  background-color: #fff;
+  width: 368px;
+  height: 188px;
+  border-radius: 5px;
+}
+
+.card__container {
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.card__head {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 25px;
+  line-height: 25px;
+  width: 100%;
+  margin: 32px 0 16px;
+  box-sizing: border-box;
+  padding: 0 32px;
+}
+
+.card__currency {
+  margin-right: 16px;
+  background-color: #ee3b37;
+  font: inherit;
+  display: flex;
+  width: 49px;
+  min-width: 49px;
+  height: 25px;
+  line-height: 25px;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: MarkGEOCAPS;
+  text-transform: uppercase;
+  border-radius: 2px;
+  color: #fff;
 }
