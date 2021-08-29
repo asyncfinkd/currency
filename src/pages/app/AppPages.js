@@ -33,7 +33,7 @@ export default function AppPages() {
           <Alert
             severity="error"
             style={{
-              position: "absolute",
+              position: "fixed",
               width: "295px",
               top: "15px",
               right: "10px",
