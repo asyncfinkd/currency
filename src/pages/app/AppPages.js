@@ -6,18 +6,18 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function AppPages() {
   const { Application } = React.useContext(ApplicationContext);
-  const useStyles = makeStyles(() => ({
-    container: {
-      width: 295,
-      position: "absolute",
-      top: "15px",
-      right: "10px",
-      zIndex: "9",
-      fontFamily: "MarkGEO",
-      fontSize: "12px",
-    },
-  }));
-  const classes = useStyles();
+  // const useStyles = makeStyles(() => ({
+  //   container: {
+  //     width: 295,
+  //     position: "absolute",
+  //     top: "15px",
+  //     right: "10px",
+  //     zIndex: "9",
+  //     fontFamily: "MarkGEO",
+  //     fontSize: "12px",
+  //   },
+  // }));
+  // const classes = useStyles();
   const [modal, setModal] = React.useState(false);
   React.useEffect(() => {
     if (modal) {
@@ -28,15 +28,29 @@ export default function AppPages() {
   });
   return (
     <>
-      <AnimatePresence onExitComplete={() => console.log("exit")}>
+      <AnimatePresence>
         {modal && (
-          <motion.div
-            transition={{ duration: 0.3 }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+          <Alert
+            severity="error"
+            style={{
+              position: "absolute",
+              width: "295px",
+              top: "15px",
+              right: "10px",
+              zIndex: "9",
+              fontFamily: "MarkGEO",
+              fontSize: "12px",
+            }}
           >
-            ეს ფუნქცია დროებით გათიშულია.
-          </motion.div>
+            <motion.div
+              transition={{ duration: 0.3 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              ეს ფუნქცია დროებით გათიშულია.
+            </motion.div>
+          </Alert>
         )}
       </AnimatePresence>
       {console.log(Application.data.currencyData.currenciesList)}
