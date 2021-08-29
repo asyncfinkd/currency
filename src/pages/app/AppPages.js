@@ -120,13 +120,20 @@ export default function AppPages() {
                 {Application.data.currencyData.currenciesList
                   .slice(0, 3)
                   .map((item) => {
+                    const {
+                      ccy,
+                      name,
+                      currentRate,
+                      dgtlBuyRate,
+                      dgtlSellRate,
+                    } = item;
                     return (
                       <>
                         <div className="container-card">
                           <div className="card__container">
                             <div className="card__head">
-                              <div className="card__currency">{item.ccy}</div>
-                              <span className="card__name">{item.name}</span>
+                              <div className="card__currency">{ccy}</div>
+                              <span className="card__name">{name}</span>
                               <button className="card__button">
                                 <svg
                                   width="48px"
@@ -166,7 +173,7 @@ export default function AppPages() {
                                   <div className="rates__content">
                                     <div className="label"></div>
                                     <div className="bank__rate">
-                                      {item.currentRate}
+                                      {currentRate}
                                     </div>
                                     <div className="diff__rate">
                                       <svg
@@ -223,7 +230,7 @@ export default function AppPages() {
                                         className="bank__rate"
                                         style={{ fontWeight: "500" }}
                                       >
-                                        {item.dgtlBuyRate}0
+                                        {dgtlBuyRate}0
                                       </div>
                                     </div>
                                     <div
@@ -235,7 +242,7 @@ export default function AppPages() {
                                         className="bank__rate"
                                         style={{ fontWeight: "500" }}
                                       >
-                                        {item.dgtlSellRate}0
+                                        {dgtlSellRate}0
                                       </div>
                                     </div>
                                   </div>
@@ -260,7 +267,7 @@ export default function AppPages() {
                                       className="bank__rate"
                                       style={{ fontWeight: "500" }}
                                     >
-                                      {item.dgtlBuyRate}0
+                                      {dgtlBuyRate}0
                                     </div>
                                   </div>
                                   <div
@@ -272,7 +279,7 @@ export default function AppPages() {
                                       className="bank__rate"
                                       style={{ fontWeight: "500" }}
                                     >
-                                      {item.dgtlSellRate}0
+                                      {dgtlSellRate}0
                                     </div>
                                   </div>
                                 </div>
