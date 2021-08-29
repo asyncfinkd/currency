@@ -1,10 +1,44 @@
 import React from "react";
 import { ApplicationContext } from "../../context/Application/ApplicationContext";
+import Alert from "@material-ui/lab/Alert";
+import { makeStyles } from "@material-ui/core/styles";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function AppPages() {
   const { Application } = React.useContext(ApplicationContext);
+  const useStyles = makeStyles(() => ({
+    container: {
+      width: 295,
+      position: "absolute",
+      top: "15px",
+      right: "10px",
+      zIndex: "9",
+      fontFamily: "MarkGEO",
+      fontSize: "12px",
+    },
+  }));
+  const classes = useStyles();
+  const [modal, setModal] = React.useState(false);
+  React.useEffect(() => {
+    if (modal) {
+      setTimeout(() => {
+        setModal(false);
+      }, 2000);
+    }
+  });
   return (
     <>
+      <AnimatePresence onExitComplete={() => console.log("exit")}>
+        {modal && (
+          <motion.div
+            transition={{ duration: 0.3 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+          >
+            ეს ფუნქცია დროებით გათიშულია.
+          </motion.div>
+        )}
+      </AnimatePresence>
       {console.log(Application.data.currencyData.currenciesList)}
       <div className="content">
         <div className="container">
@@ -20,7 +54,11 @@ export default function AppPages() {
                   </span>
                 </div>
                 <div>
-                  <button className="container__button" slot="calculator__btn">
+                  <button
+                    className="container__button"
+                    slot="calculator__btn"
+                    onClick={() => setModal(true)}
+                  >
                     <svg
                       width="48px"
                       height="48px"
