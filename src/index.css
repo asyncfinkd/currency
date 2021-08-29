@@ -400,7 +400,7 @@
   min-height: 410px;
   width: 100%;
   background-image: linear-gradient(30deg, #484055, #53616f);
-  padding: 50px 50px 64px 50px;
+  padding: 50px;
   position: relative;
   display: flex;
   flex-grow: 1;
@@ -421,6 +421,8 @@
 .container-flex__title {
   display: flex;
   justify-content: space-between;
+  align-content: flex-end;
+  align-items: flex-end;
   width: 100%;
   /* max-width: 1980px;
   margin: auto; */
@@ -542,4 +544,127 @@
   text-transform: uppercase;
   border-radius: 2px;
   color: #fff;
+}
+
+.card__name {
+  flex: 1;
+  font: inherit;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #000;
+  font-family: MarkGEO, sans-serif;
+}
+
+.card__button {
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  font-family: MarkGEO, sans-serif;
+  background-color: transparent;
+  color: #ff6c1d;
+  fill: #ff6c1d;
+  user-select: none;
+  font-weight: 500;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: MarkGEOCAPS, sans-serif;
+  font-size: 14px;
+  transition: opacity 200ms ease-in-out, color 200ms ease-in-out,
+    background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  border: none;
+  outline: none;
+}
+
+.card__button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.card__button:hover {
+  color: #fd9157;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 32px;
+}
+
+.card__content > div.item:first-child {
+  width: 93px;
+}
+
+.card__content > div.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content > div.item span {
+  font-family: MarkGEOCAPS;
+  display: flex;
+  line-height: 9px;
+  padding-bottom: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.rates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vertical-divisor {
+  width: 1px;
+  background: #000;
+  opacity: 0.05;
+  margin: 53px 22px 0 8px;
+  height: 25px;
+}
+
+.card__container > div.item:last-child {
+  flex: 1;
+}
+
+.rates__content {
+  flex-grow: 0;
+  font: inherit;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  font-size: 12px;
+  min-height: 12px;
+  font-weight: 300;
+  line-height: 9px;
+  margin-bottom: 13px;
+}
+
+.bank__rate {
+  display: flex;
+  line-height: 17px;
+  font-weight: 600;
+  font-family: MarkGEO;
+  font-size: 18px;
+}
+
+.diff__rate {
+  display: flex;
+  color: #ee3b37;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 3px;
+}
+
+.diff__rate svg {
+  pointer-events: none;
+  display: block;
+  width: 9px;
+  height: 9px;
+  color: currentColor;
+  fill: currentColor;
+  margin-right: 5px;
 }
