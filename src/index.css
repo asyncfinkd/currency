@@ -420,12 +420,12 @@
 
 .container-flex__title {
   display: flex;
-  justify-content: space-between;
   align-content: flex-end;
   align-items: flex-end;
+  justify-content: center;
+  max-width: 1980px;
+  margin: auto;
   width: 100%;
-  /* max-width: 1980px;
-  margin: auto; */
   margin-bottom: 32px;
 }
 
@@ -475,6 +475,7 @@
   transition: opacity 200ms ease-in-out, color 200ms ease-in-out,
     background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
   user-select: none;
+  margin-left: 135px;
   font-weight: 500;
   overflow: hidden;
 }
@@ -672,4 +673,8 @@
 
 .direction\:column {
   flex-direction: column;
+}
+
+.container-card:last-child {
+  margin: 0;
 }

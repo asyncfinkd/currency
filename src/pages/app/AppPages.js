@@ -9,7 +9,15 @@ export default function AppPages() {
       <div className="content">
         <div className="container">
           <div className="container-main">
-            <div style={{ width: "100%" }}>
+            <div
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <div className="container-flex__title">
                 <div className="container:flex">
                   <span className="container-flex__titleSPAN" slot="title">
