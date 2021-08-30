@@ -53,6 +53,9 @@ export default function Calculator({ calculator, calculatorHandle }) {
                   <select>
                     <option>საბითუმო კურსი</option>
                   </select>
+                  <span className="calculator__bottomSection__whereSpan">
+                    საიდან
+                  </span>
                 </div>
               </div>
             </div>

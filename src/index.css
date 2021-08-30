@@ -1054,6 +1054,14 @@
   padding: 32px 40px;
   width: 100%;
   display: inline-flex;
+  flex-direction: column;
+}
+
+.calculator__bottomSection__whereSpan {
+  font-family: MarkGEO;
+  color: #777777;
+  margin-top: 23px;
+  font-size: 14px;
 }
 
 .calculator__bottomSection__content select {
