@@ -58,7 +58,25 @@ export default function Calculator({ calculator, calculatorHandle }) {
                   </span>
                   <div className="calculator__bottomSection__whereContainer">
                     <input type="text" placeholder="თანხა" />
-                    <input type="text" />
+                    <div className="calculator__bottomSection__selectBox">
+                      <div className="calculator__bottomSection__selectBox__Wrapper">
+                        <div className="calculator__bottomSection__selectBox__WrapperContainer">
+                          <div className="calculator__bottomSection__selectBox__WrapperContainerFlex">
+                            <div
+                              style={{
+                                display: "flex",
+                                flexDirection: "column",
+                              }}
+                            >
+                              <span className="calculator__bottomSection__selectBox__WrapperContainerFlexSpan">
+                                ვალუტა
+                              </span>
+                            </div>
+                            <div>qwe</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

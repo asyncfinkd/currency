@@ -1090,6 +1090,54 @@
   border: 1px solid #b1b1b1;
 }
 
+.calculator__bottomSection__selectBox {
+  width: 286px;
+  border: 1px solid red;
+  border-radius: 2px;
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-top: 13px;
+  height: 65px;
+  border: 1px solid #d8d8d8;
+}
+
+.calculator__bottomSection__selectBox__WrapperContainer {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  position: relative;
+  transition: border-color 200ms ease;
+  cursor: pointer;
+  padding: 16px 24px;
+}
+
+.calculator__bottomSection__selectBox__WrapperContainerFlex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.calculator__bottomSection__selectBox__WrapperContainerFlexSpan {
+  font-size: 10px;
+  font-weight: 500;
+  position: absolute;
+  will-change: transform;
+  transform: translateY(-5px);
+  transition: transform 200ms ease 100ms, font-size 200ms ease 100ms;
+  padding-right: 42px;
+  font-family: MarkGEO;
+  color: #646464;
+}
+
+.calculator__bottomSection__selectBox__Wrapper {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  max-width: 100%;
+}
+
 .calculator__bottomSection__content select {
   display: flex;
   width: 237px;
