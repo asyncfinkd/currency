@@ -165,6 +165,7 @@ export default function AppPages() {
                                   viewBox="0 0 48 48"
                                   version="1.1"
                                   xmlns="http://www.w3.org/2000/svg"
+                                  onClick={() => setModal(true)}
                                 >
                                   <g
                                     id="icons-48-general-chart-fill"
@@ -429,6 +430,7 @@ export default function AppPages() {
                               viewBox="0 0 48 48"
                               version="1.1"
                               xmlns="http://www.w3.org/2000/svg"
+                              onClick={() => setModal(true)}
                             >
                               <g
                                 id="icons-48-general-chart-fill"
