@@ -751,6 +751,154 @@
   border: 1px solid #b1b1b1;
 }
 
+.all__courses__bottomSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.all__courses__bottomSectionTable {
+  display: table;
+  width: 100%;
+}
+
+.all__courses__bottomSectionTableBody {
+  display: table-row-group;
+}
+
+.table-header {
+  background: #ffffff;
+  font-family: MarkGEO;
+  font-size: 14px;
+  color: #646464;
+  text-align: left;
+  font-weight: 500;
+}
+
+.table-row {
+  display: table-row;
+  height: 64px;
+}
+
+.table-row > *:nth-child(2) {
+  width: 240px;
+}
+
+.table-header:first-of-type > .table-cell:nth-child(3) {
+  width: 230px;
+}
+
+.table-row > * {
+  vertical-align: middle;
+}
+
+.table-row > *:last-child {
+  width: 100px;
+}
+
+.table-row:first-of-type .table-cell {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.table-cell {
+  display: table-cell;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0 22px;
+  height: 64px;
+}
+
+.table-row > .table-cell:nth-child(3) > div {
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 150px;
+}
+
+.table-row > .table-cell:nth-child(3) > div > * {
+  width: 50%;
+  text-align: left;
+}
+
+.table-odd-element:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.table-cell .card__name {
+  font-family: MarkGEO;
+  font-size: 14px;
+  color: #333333;
+  padding-left: 16px;
+  padding-left: 0px;
+}
+
+.table-cell-container {
+  display: inline-flex;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
+}
+
+.table-cell-bank-rate {
+  display: flex;
+  line-height: 17px;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  font-weight: 600;
+  color: black;
+}
+
+.table-cell-diff-rate {
+  color: #ee3b37;
+  display: flex;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.table-cell-diff-rate-content {
+  display: inline-flex;
+  font: inherit;
+  text-decoration: inherit;
+  width: auto;
+  gap: 10px;
+}
+
+.table-cell-price-paragraph {
+  color: #000;
+  font-size: 18px;
+}
+
+.all__courses__button__seeMore {
+  margin-top: 48px;
+  background-color: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.92);
+  text-transform: uppercase;
+  height: 56px;
+  max-height: 56px;
+  padding: 0 34px 0 34px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: MarkGEOCAPS;
+  font-size: 14px;
+  transition: opacity 200ms ease-in-out 0s, color 200ms ease-in-out 0s,
+    background-color 200ms ease-in-out 0s, box-shadow 200ms ease-in-out 0s;
+  user-select: none;
+  overflow: hidden;
+  font-weight: 500;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.all__courses__button__seeMore:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
 @media all and (max-width: 1216px) {
   .container-bottom-section {
     flex-direction: column;
