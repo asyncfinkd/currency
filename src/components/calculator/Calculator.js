@@ -56,6 +56,10 @@ export default function Calculator({ calculator, calculatorHandle }) {
                   <span className="calculator__bottomSection__whereSpan">
                     საიდან
                   </span>
+                  <div className="calculator__bottomSection__whereContainer">
+                    <input type="text" placeholder="თანხა" />
+                    <input type="text" />
+                  </div>
                 </div>
               </div>
             </div>
