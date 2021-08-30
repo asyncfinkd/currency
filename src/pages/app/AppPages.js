@@ -5,9 +5,11 @@ import Alert from "@material-ui/lab/Alert";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Calculator from "../../components/calculator/Calculator";
 
 export default function AppPages() {
   const { Application } = React.useContext(ApplicationContext);
+  const [calculator, setCalculator] = useState(false);
   const [showLength, setShowLength] = useState(6);
   // const useStyles = makeStyles(() => ({
   //   container: {
@@ -34,7 +36,6 @@ export default function AppPages() {
     }
   });
   const identificationSearch = () => {
-    console.log(Application.data.currencyData.currenciesList);
     if (search.length == 0) {
       setData(Application.data.currencyData.currenciesList);
     } else {
@@ -63,6 +64,7 @@ export default function AppPages() {
       <Helmet>
         <title>ვალუტის კურსი</title>
       </Helmet>
+      <Calculator calculator={calculator} />
       <AnimatePresence>
         {modal && (
           <Alert
@@ -105,7 +107,7 @@ export default function AppPages() {
                   <button
                     className="container__button"
                     slot="calculator__btn"
-                    onClick={() => setModal(true)}
+                    onClick={() => setCalculator(!calculator)}
                   >
                     <svg
                       width="48px"
@@ -468,7 +470,6 @@ export default function AppPages() {
             onClick={() => {
               if (data.length != showLength) {
                 setShowLength(showLength + 10);
-                // console.log(showLength);
               }
             }}
           >
