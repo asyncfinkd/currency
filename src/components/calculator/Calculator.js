@@ -71,6 +71,9 @@ export default function Calculator({ calculator, calculatorHandle }) {
                               <span className="calculator__bottomSection__selectBox__WrapperContainerFlexSpan">
                                 ვალუტა
                               </span>
+                              <span className="calculator__bottomSection__selectBox__WrapperContainerFlexSpanCourse">
+                                აშშ დოლარი
+                              </span>
                             </div>
                             <div>qwe</div>
                           </div>

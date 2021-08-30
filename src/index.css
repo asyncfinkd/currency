@@ -1130,6 +1130,17 @@
   color: #646464;
 }
 
+.calculator__bottomSection__selectBox__WrapperContainerFlexSpanCourse {
+  margin-top: 11px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: MarkGEO;
+  color: #3d3d3d;
+}
+
 .calculator__bottomSection__selectBox__Wrapper {
   display: flex;
   position: relative;
