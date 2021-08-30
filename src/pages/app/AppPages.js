@@ -64,7 +64,13 @@ export default function AppPages() {
       <Helmet>
         <title>ვალუტის კურსი</title>
       </Helmet>
-      <Calculator calculator={calculator} />
+      <Calculator
+        calculator={calculator}
+        calculatorHandle={() => {
+          setCalculator(!calculator);
+          document.body.style.overflowY = "visible";
+        }}
+      />
       <AnimatePresence>
         {modal && (
           <Alert
@@ -107,7 +113,10 @@ export default function AppPages() {
                   <button
                     className="container__button"
                     slot="calculator__btn"
-                    onClick={() => setCalculator(!calculator)}
+                    onClick={() => {
+                      setCalculator(!calculator);
+                      document.body.style.overflowY = "hidden";
+                    }}
                   >
                     <svg
                       width="48px"
