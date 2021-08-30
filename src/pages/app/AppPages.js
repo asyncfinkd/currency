@@ -328,6 +328,15 @@ export default function AppPages() {
                 <div className="table-cell"></div>
               </div>
               {Application.data.currencyData.currenciesList
+                .filter((val) => {
+                  if (search == "") {
+                    return val;
+                  } else if (
+                    val.name.toLowerCase().includes(search.toLowerCase())
+                  ) {
+                    return val;
+                  }
+                })
                 .slice(0, showLength)
                 .map((item) => {
                   return (
