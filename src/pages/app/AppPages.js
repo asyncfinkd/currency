@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ApplicationContext } from "../../context/Application/ApplicationContext";
 import Alert from "@material-ui/lab/Alert";
 // import { makeStyles } from "@material-ui/core/styles";
@@ -23,6 +23,9 @@ export default function AppPages() {
   // const classes = useStyles();
   const [modal, setModal] = React.useState(false);
   const [search, setSearch] = useState("");
+  const [data, setData] = useState(
+    Application.data.currencyData.currenciesList
+  );
   React.useEffect(() => {
     if (modal) {
       setTimeout(() => {
@@ -30,6 +33,25 @@ export default function AppPages() {
       }, 2000);
     }
   });
+  const identificationSearch = () => {
+    console.log(Application.data.currencyData.currenciesList);
+    if (search.length == 0) {
+      setData(Application.data.currencyData.currenciesList);
+    } else {
+      setData(
+        Application.data.currencyData.currenciesList.filter((val) => {
+          if (search == "") {
+            return val;
+          } else if (val.name.toLowerCase().includes(search.toLowerCase())) {
+            return val;
+          }
+        })
+      );
+    }
+  };
+  useEffect(() => {
+    identificationSearch();
+  }, [search]);
 
   const { pathname } = useLocation();
 
@@ -304,7 +326,9 @@ export default function AppPages() {
             type="text"
             placeholder="ვალუტის ძებნა"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
           />
         </div>
         <div className="all__courses__bottomSection">
@@ -327,18 +351,8 @@ export default function AppPages() {
                 </div>
                 <div className="table-cell"></div>
               </div>
-              {Application.data.currencyData.currenciesList
-                .filter((val) => {
-                  if (search == "") {
-                    return val;
-                  } else if (
-                    val.name.toLowerCase().includes(search.toLowerCase())
-                  ) {
-                    return val;
-                  }
-                })
-                .slice(0, showLength)
-                .map((item) => {
+              {data &&
+                data.slice(0, showLength).map((item) => {
                   return (
                     <>
                       <div className="table-header table-row table-odd-element">
@@ -448,16 +462,11 @@ export default function AppPages() {
           </div>
           <button
             className="all__courses__button__seeMore"
-            disabled={
-              Application.data.currencyData.currenciesList.length + 1 ===
-              showLength
-            }
+            disabled={data.length === showLength || data.length < showLength}
             onClick={() => {
-              if (
-                Application.data.currencyData.currenciesList.length + 1 !=
-                showLength
-              ) {
+              if (data.length != showLength) {
                 setShowLength(showLength + 10);
+                // console.log(showLength);
               }
             }}
           >
