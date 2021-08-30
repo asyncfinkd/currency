@@ -47,6 +47,15 @@ export default function Calculator({ calculator, calculatorHandle }) {
                 </button>
               </div>
             </div>
+            <div className="calculator__bottomSection">
+              <div className="calculator__bottomSectionContent">
+                <div className="calculator__bottomSection__content">
+                  <select>
+                    <option>საბითუმო კურსი</option>
+                  </select>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
