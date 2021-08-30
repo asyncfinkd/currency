@@ -22,6 +22,7 @@ export default function AppPages() {
   // }));
   // const classes = useStyles();
   const [modal, setModal] = React.useState(false);
+  const [search, setSearch] = useState("");
   React.useEffect(() => {
     if (modal) {
       setTimeout(() => {
@@ -118,7 +119,6 @@ export default function AppPages() {
                 </div>
               </div>
               <div className="container-bottom-section">
-                {console.log(Application.data.currencyData.currenciesList)}
                 {Application.data.currencyData.currenciesList
                   .slice(0, 3)
                   .map((item) => {
@@ -300,7 +300,12 @@ export default function AppPages() {
       <div className="all__coursesContainer">
         <div className="all__courses__topSection">
           <span>ყველა ვალუტა</span>
-          <input type="text" placeholder="ვალუტის ძებნა" />
+          <input
+            type="text"
+            placeholder="ვალუტის ძებნა"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
         </div>
         <div className="all__courses__bottomSection">
           <div className="all__courses__bottomSectionTable">
@@ -440,11 +445,9 @@ export default function AppPages() {
             }
             onClick={() => {
               if (
-                Application.data.currencyData.currenciesList.length + 1 ===
+                Application.data.currencyData.currenciesList.length + 1 !=
                 showLength
               ) {
-                alert(1);
-              } else {
                 setShowLength(showLength + 10);
               }
             }}
