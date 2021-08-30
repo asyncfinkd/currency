@@ -10,7 +10,6 @@ function App() {
       <ApplicationContext.Provider value={{ Application, setApplication }}>
         <BrowserRouter>
           <Switch>
-            
             <Route path="/" exact component={AppPages} />
           </Switch>
         </BrowserRouter>
