@@ -700,6 +700,57 @@
   display: none;
 }
 
+.all__coursesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1168px;
+  padding: 32px 0;
+  margin: 0 auto;
+}
+
+.all__courses__topSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.all__courses__topSection span {
+  font-family: MarkGEO;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3d3d3d;
+}
+
+.all__courses__topSection input {
+  display: flex;
+  padding: 8px 24px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  color: #646464;
+  outline: none;
+  width: auto;
+  width: 200px;
+  font-family: MarkGEO;
+  font-size: 12px;
+  transition: border-color 200ms ease;
+}
+
+.all__courses__topSection input:focus-within,
+.all__courses__topSection input:hover {
+  border: 1px solid #b1b1b1;
+}
+
 @media all and (max-width: 1216px) {
   .container-bottom-section {
     flex-direction: column;

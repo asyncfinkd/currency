@@ -295,6 +295,12 @@ export default function AppPages() {
           </div>
         </div>
       </div>
+      <div className="all__coursesContainer">
+        <div className="all__courses__topSection">
+          <span>ყველა ვალუტა</span>
+          <input type="text" placeholder="ვალუტის ძებნა" />
+        </div>
+      </div>
     </>
   );
 }
