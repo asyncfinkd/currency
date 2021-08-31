@@ -3,6 +3,9 @@ import { ApplicationContext } from "../../context/Application/ApplicationContext
 
 export default function Calculator({ calculator, calculatorHandle }) {
   const { Application } = useContext(ApplicationContext);
+  const [data, setData] = React.useState(
+    Application.data.currencyData.currenciesList
+  );
   const [showWhereSelect, setShowWhereSelect] = React.useState(false);
   const [showSecondSelect, setShowSecondSelect] = React.useState(false);
   const [whereSelectValue, setWhereSelectValue] = React.useState([
