@@ -1289,6 +1289,44 @@
   width: 164px;
 }
 
+.calculator__changeButton {
+  position: relative;
+  display: flex;
+  margin-top: 32px;
+  align-self: center;
+  width: 56px;
+  min-width: 56px;
+  max-width: 56px;
+  justify-content: center;
+  border-radius: 50%;
+  text-transform: uppercase;
+  height: 56px;
+  max-height: 56px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: MarkGEOCAPS, sans-serif;
+  font-size: 14px;
+  transition: opacity 200ms ease-in-out 0s, color 200ms ease-in-out 0s,
+    background-color 200ms ease-in-out 0s, box-shadow 200ms ease-in-out 0s;
+  user-select: none;
+  font-weight: 500;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: stretch;
+  background-color: #ff600a;
+}
+
+.calculator__changeButtonContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
 @media all and (max-width: 1216px) {
   .container-bottom-section {
     flex-direction: column;
