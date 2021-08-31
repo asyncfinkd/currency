@@ -30,6 +30,12 @@ export default function Calculator({ calculator, calculatorHandle }) {
       ccy: "GEL",
       viewCcy: "GEL",
       name: "ლარი",
+      buyRate: "0",
+      currentRate: "0",
+      dgtlBuyRate: "0",
+      dgtlSellRate: "0",
+      sellRate: "0",
+      difference: "0",
     });
     console.log(data);
   }, []);
