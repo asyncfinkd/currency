@@ -1238,6 +1238,7 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   height: 205px;
   max-height: 205px;
+  z-index: 9999;
 }
 
 .calculator__suggestions[isActive="true"] {
