@@ -8,12 +8,18 @@ export default function Calculator({ calculator, calculatorHandle }) {
   const [whereSelectValue, setWhereSelectValue] = React.useState([
     { viewCcy: "USD", name: "აშშ დოლარი" },
   ]);
+  const [sortedWhereSelectValue, setSortedWhereSelectValue] = React.useState(
+    []
+  );
   const [secondSelectValue, setSecondSelectValue] = React.useState([
     {
       viewCcy: "GEL",
       name: "ლარი",
     },
   ]);
+  const [sortedSecondSelectValue, setSortedSecondSelectValue] = React.useState(
+    []
+  );
   const [data, setData] = React.useState(
     Application.data.currencyData.currenciesList
   );
@@ -28,27 +34,50 @@ export default function Calculator({ calculator, calculatorHandle }) {
   }, []);
   const convertationCurrency = () => {
     console.log(data);
-    console.log(whereSelectValue[0].viewCcy);
-    console.log(secondSelectValue[0].viewCcy);
+    // console.log(whereSelectValue[0].viewCcy);
+    // console.log(secondSelectValue[0].viewCcy);
     if (secondSelectValue[0].viewCcy === whereSelectValue[0].viewCcy) {
       setSecondInput(whereInput);
     } else {
-      if (
-        secondSelectValue[0].viewCcy === "GEL" ||
-        whereSelectValue[0].viewCcy === "GEL"
-      ) {
-        data.map((item) => {
-          if (item.ccy === whereSelectValue[0].viewCcy) {
-            // console.log(whereInput * item.dgtlBuyRate);
-            setSecondInput(whereInput * item.dgtlBuyRate);
+      data.map((item) => {
+        if (item.viewCcy === secondSelectValue[0].viewCcy) {
+          setSortedSecondSelectValue(item);
+        }
+        if (item.viewCcy === whereSelectValue[0].viewCcy) {
+          setSortedWhereSelectValue(item);
+          if (sortedSecondSelectValue.viewCcy != "GEL") {
+            let a = (whereInput * item.dgtlBuyRate) / item.rateWeight;
+            let b =
+              (a / sortedSecondSelectValue.dgtlBuyRate) *
+              sortedSecondSelectValue.rateWeight;
+            console.log(b);
+            setSecondInput(b);
           }
-        });
-      }
+        }
+
+        // if (item.viewCcy === whereSelectValue[0].viewCcy) {
+        //   if (secondSelectValue[0].viewCcy != "GEL") {
+        //     let a = (whereInput * item.dgtlBuyRate) / item.rateWeight;
+        //     let b =
+        //       (a * secondSelectValue[0].dgtlBuyRate) /
+        //       secondSelectValue[0].rateWeight;
+        //     console.log(b);
+        //   }
+        //   setSecondInput((whereInput * item.dgtlBuyRate) / item.rateWeight);
+        // }
+      });
     }
   };
   useEffect(() => {
     convertationCurrency();
-  }, [whereInput, secondInput, whereSelectValue, secondSelectValue]);
+  }, [
+    whereInput,
+    secondInput,
+    whereSelectValue,
+    secondSelectValue,
+    sortedSecondSelectValue,
+    sortedWhereSelectValue,
+  ]);
   return (
     <>
       <div is-active={calculator && ""} className="container__calculator">
