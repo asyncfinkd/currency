@@ -23,6 +23,15 @@ export default function AppPagesUtils({
       setActive(true);
     }
   }, []);
+
+  const getFormattedNum = (num) => {
+    if (num.length != 6) {
+      for (let i = 0; i <= 6 - num.length; i++) {
+        num += "0";
+      }
+    }
+    return num;
+  };
   return (
     <>
       <div className="container-card">
@@ -71,7 +80,9 @@ export default function AppPagesUtils({
               <div className="rates">
                 <div className="rates__content">
                   <div className="label"></div>
-                  <div className="bank__rate">{currentRate}</div>
+                  <div className="bank__rate">
+                    {getFormattedNum(currentRate.toString())}
+                  </div>
                   <div
                     className={
                       active ? "diff__rate actived__diff__rate" : "diff__rate"
@@ -109,8 +120,10 @@ export default function AppPagesUtils({
                     </svg>
                     <span>
                       {active
-                        ? difference.toString().slice(1, difference.length)
-                        : difference}
+                        ? getFormattedNum(
+                            difference.toString().slice(1, difference.length)
+                          )
+                        : getFormattedNum(difference.toString())}
                     </span>
                   </div>
                 </div>
@@ -131,7 +144,7 @@ export default function AppPagesUtils({
                   <div className="rates direction:column">
                     <div className="label">ყიდვა</div>
                     <div className="bank__rate" style={{ fontWeight: "500" }}>
-                      {dgtlBuyRate}0
+                      {getFormattedNum(dgtlBuyRate.toString())}
                     </div>
                   </div>
                   <div
@@ -140,7 +153,7 @@ export default function AppPagesUtils({
                   >
                     <div className="label">გაყიდვა</div>
                     <div className="bank__rate" style={{ fontWeight: "500" }}>
-                      {dgtlSellRate}0
+                      {getFormattedNum(dgtlSellRate.toString())}
                     </div>
                   </div>
                 </div>
@@ -160,7 +173,7 @@ export default function AppPagesUtils({
                 <div className="rates direction:column">
                   <div className="label">ყიდვა</div>
                   <div className="bank__rate" style={{ fontWeight: "500" }}>
-                    {dgtlBuyRate}0
+                    {getFormattedNum(dgtlBuyRate.toString())}
                   </div>
                 </div>
                 <div
@@ -169,7 +182,7 @@ export default function AppPagesUtils({
                 >
                   <div className="label">გაყიდვა</div>
                   <div className="bank__rate" style={{ fontWeight: "500" }}>
-                    {dgtlSellRate}0
+                    {getFormattedNum(dgtlSellRate.toString())}
                   </div>
                 </div>
               </div>
