@@ -258,6 +258,125 @@ export default function Calculator({ calculator, calculatorHandle }) {
                   >
                     სად
                   </span>
+                  <div className="calculator__bottomSection__whereContainer">
+                    <input type="text" placeholder="თანხა" />
+                    <div
+                      className="calculator__bottomSection__selectBox"
+                      onClick={() => setShowWhereSelect(!showWhereSelect)}
+                    >
+                      <div className="calculator__bottomSection__selectBox__Wrapper">
+                        <div className="calculator__bottomSection__selectBox__WrapperContainer">
+                          <div className="calculator__bottomSection__selectBox__WrapperContainerFlex">
+                            <div
+                              style={{
+                                display: "flex",
+                                flexDirection: "column",
+                              }}
+                            >
+                              <span className="calculator__bottomSection__selectBox__WrapperContainerFlexSpan">
+                                ვალუტა
+                              </span>
+                              <span className="calculator__bottomSection__selectBox__WrapperContainerFlexSpanCourse">
+                                {whereSelectValue[0].name}
+                              </span>
+                            </div>
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "10px",
+                              }}
+                            >
+                              <div className="calculator__logoWrapper">
+                                <div className="calculator__logoWrapperContent">
+                                  <span className="calculator__logoWrapperContentSpan">
+                                    {whereSelectValue[0].viewCcy}
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                className="calculator__selectBoxIcon"
+                                is-active={showWhereSelect && "true"}
+                              >
+                                <svg
+                                  width="12"
+                                  height="12px"
+                                  viewBox="0 0 48 48"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="icons-48-system-chevron_down"
+                                    stroke="none"
+                                    stroke-width="1"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                  >
+                                    <rect
+                                      id="shape"
+                                      x="0"
+                                      y="0"
+                                      width="48"
+                                      height="48"
+                                    ></rect>
+                                    <path
+                                      d="M23.3632653,35.4612245 C22.8893704,35.4599269 22.4338561,35.2777212 22.0897959,34.9518368 L2.32555098,16.4865306 C1.70987893,15.7544649 1.73060236,14.6798812 2.37404202,13.9720976 C3.01748169,13.264314 4.0852338,13.1415745 4.87248976,13.6848979 L23.3632653,31.0040816 L41.8031021,13.6848979 C42.2817601,13.1157489 43.0472232,12.8761335 43.7649709,13.0707676 C44.4827185,13.2654018 45.022263,13.8589007 45.1478142,14.5918953 C45.2733654,15.3248899 44.9620979,16.0641205 44.3500409,16.4865306 L24.6367347,34.9518368 C24.2926745,35.2777212 23.8371602,35.4599269 23.3632653,35.4612245 L23.3632653,35.4612245 Z"
+                                      id="Mask"
+                                      fill="currentColor"
+                                      fill-rule="nonzero"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      isActive={showWhereSelect && "true"}
+                      className="calculator__suggestions"
+                      id="suggestions"
+                    >
+                      <div className="calculator__suggestions__content">
+                        {Application.data.currencyData.currenciesList.map(
+                          (item) => {
+                            return (
+                              <>
+                                <div
+                                  className="calculator__suggestions__section"
+                                  onClick={() => {
+                                    const empty = (arr) => (arr.length = []);
+                                    empty(whereSelectValue);
+                                    setWhereSelectValue([
+                                      {
+                                        viewCcy: item.viewCcy,
+                                        name: item.name,
+                                      },
+                                    ]);
+                                    setShowWhereSelect(false);
+                                  }}
+                                >
+                                  <div>
+                                    <span className="calculator__suggestions__sectionSpan">
+                                      {item.name}
+                                    </span>
+                                  </div>
+                                  <div>
+                                    <div className="calculator__logoWrapperContent">
+                                      <span className="calculator__logoWrapperContentSpan">
+                                        {item.viewCcy}
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
