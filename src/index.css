@@ -862,6 +862,7 @@
   font: inherit;
   text-decoration: inherit;
   width: auto;
+  align-items: center;
   gap: 10px;
 }
 
