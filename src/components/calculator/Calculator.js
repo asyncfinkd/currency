@@ -38,7 +38,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
   };
   useEffect(() => {
     convertationCurrency();
-  }, [whereInput, secondInput]);
+  }, [whereInput, secondInput, whereSelectValue, secondSelectValue]);
   return (
     <>
       <div is-active={calculator && ""} className="container__calculator">
@@ -399,8 +399,8 @@ export default function Calculator({ calculator, calculatorHandle }) {
                                   className="calculator__suggestions__section"
                                   onClick={() => {
                                     const empty = (arr) => (arr.length = []);
-                                    empty(whereSelectValue);
-                                    setWhereSelectValue([
+                                    empty(secondSelectValue);
+                                    setSecondSelectValue([
                                       {
                                         viewCcy: item.viewCcy,
                                         name: item.name,
