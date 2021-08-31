@@ -1168,6 +1168,50 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.calculator__logoWrapper {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  max-width: 50px;
+  min-width: 50px;
+  height: 25px;
+  max-height: 25px;
+  min-height: 25px;
+  overflow: hidden;
+  margin-left: initial;
+}
+
+.calculator__logoWrapperContent {
+  display: flex;
+  width: 49px;
+  min-width: 49px;
+  height: 25px;
+  line-height: 25px;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: MarkGEOCAPS;
+  text-transform: uppercase;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #3d3d3d;
+}
+
+.calculator__logoWrapperContentSpan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator__selectBoxIcon {
+  width: 12px;
+  max-width: 12px;
+  min-width: 12px;
+  margin-left: 4px;
+  transition: transform 0.15s ease-in-out;
+  color: #b1b1b1;
+}
+
 @media all and (max-width: 1216px) {
   .container-bottom-section {
     flex-direction: column;
