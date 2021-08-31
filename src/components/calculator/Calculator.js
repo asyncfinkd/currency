@@ -47,7 +47,6 @@ export default function Calculator({ calculator, calculatorHandle }) {
             let b =
               (a / sortedSecondSelectValue.dgtlBuyRate) *
               sortedSecondSelectValue.rateWeight;
-            console.log(b);
             setSecondInput(b);
           } else {
             setSecondInput(whereInput * item.dgtlBuyRate);
