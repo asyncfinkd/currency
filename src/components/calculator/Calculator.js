@@ -4,6 +4,7 @@ import { ApplicationContext } from "../../context/Application/ApplicationContext
 export default function Calculator({ calculator, calculatorHandle }) {
   const { Application } = useContext(ApplicationContext);
   const [showWhereSelect, setShowWhereSelect] = React.useState(false);
+  const [showSecondSelect, setShowSecondSelect] = React.useState(false);
   const [whereSelectValue, setWhereSelectValue] = React.useState([
     { viewCcy: "USD", name: "აშშ დოლარი" },
   ]);
@@ -13,6 +14,8 @@ export default function Calculator({ calculator, calculatorHandle }) {
       name: "ლარი",
     },
   ]);
+  const [whereInput, setWhereInput] = React.useState("");
+  const [secondInput, setSecondInput] = React.useState("");
   return (
     <>
       <div is-active={calculator && ""} className="container__calculator">
@@ -72,7 +75,10 @@ export default function Calculator({ calculator, calculatorHandle }) {
                     <input type="text" placeholder="თანხა" />
                     <div
                       className="calculator__bottomSection__selectBox"
-                      onClick={() => setShowWhereSelect(!showWhereSelect)}
+                      onClick={() => {
+                        setShowWhereSelect(!showWhereSelect);
+                        setShowSecondSelect(false);
+                      }}
                     >
                       <div className="calculator__bottomSection__selectBox__Wrapper">
                         <div className="calculator__bottomSection__selectBox__WrapperContainer">
@@ -268,7 +274,10 @@ export default function Calculator({ calculator, calculatorHandle }) {
                     <input type="text" placeholder="თანხა" />
                     <div
                       className="calculator__bottomSection__selectBox"
-                      onClick={() => setShowWhereSelect(!showWhereSelect)}
+                      onClick={() => {
+                        setShowSecondSelect(!showSecondSelect);
+                        setShowWhereSelect(false);
+                      }}
                     >
                       <div className="calculator__bottomSection__selectBox__Wrapper">
                         <div className="calculator__bottomSection__selectBox__WrapperContainer">
@@ -302,7 +311,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
                               </div>
                               <div
                                 className="calculator__selectBoxIcon"
-                                is-active={showWhereSelect && "true"}
+                                is-active={showSecondSelect && "true"}
                               >
                                 <svg
                                   width="12"
@@ -340,8 +349,12 @@ export default function Calculator({ calculator, calculatorHandle }) {
                       </div>
                     </div>
                     <div
-                      isActive={showWhereSelect && "true"}
-                      className="calculator__suggestions"
+                      isActive={showSecondSelect && "true"}
+                      className={
+                        showSecondSelect
+                          ? "calculator__suggestions secondBox"
+                          : "calculator__suggestions"
+                      }
                       id="suggestions"
                     >
                       <div className="calculator__suggestions__content">
@@ -360,7 +373,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
                                         name: item.name,
                                       },
                                     ]);
-                                    setShowWhereSelect(false);
+                                    setShowSecondSelect(false);
                                   }}
                                 >
                                   <div>

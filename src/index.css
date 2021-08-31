@@ -1333,6 +1333,10 @@
   text-decoration: none;
 }
 
+.secondBox {
+  top: 78px !important;
+}
+
 @media all and (max-width: 1216px) {
   .container-bottom-section {
     flex-direction: column;
