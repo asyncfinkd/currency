@@ -72,7 +72,12 @@ export default function Calculator({ calculator, calculatorHandle }) {
                     საიდან
                   </span>
                   <div className="calculator__bottomSection__whereContainer">
-                    <input type="text" placeholder="თანხა" />
+                    <input
+                      type="text"
+                      placeholder="თანხა"
+                      value={whereInput}
+                      onChange={(e) => setWhereInput(e.target.value)}
+                    />
                     <div
                       className="calculator__bottomSection__selectBox"
                       onClick={() => {
@@ -271,7 +276,12 @@ export default function Calculator({ calculator, calculatorHandle }) {
                     სად
                   </span>
                   <div className="calculator__bottomSection__whereContainer">
-                    <input type="text" placeholder="თანხა" />
+                    <input
+                      type="text"
+                      placeholder="თანხა"
+                      value={secondInput}
+                      onChange={(e) => setSecondInput(e.target.value)}
+                    />
                     <div
                       className="calculator__bottomSection__selectBox"
                       onClick={() => {
