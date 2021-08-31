@@ -1317,6 +1317,11 @@
   background-color: #ff600a;
 }
 
+.calculator__changeButton:hover {
+  background-color: #ff6c1d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
 .calculator__changeButtonContent {
   position: relative;
   display: flex;

@@ -252,6 +252,12 @@ export default function Calculator({ calculator, calculatorHandle }) {
                       </div>
                     </div>
                   </div>
+                  <span
+                    className="calculator__bottomSection__whereSpan"
+                    style={{ marginTop: "4px" }}
+                  >
+                    სად
+                  </span>
                 </div>
               </div>
             </div>
