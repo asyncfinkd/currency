@@ -33,9 +33,6 @@ export default function Calculator({ calculator, calculatorHandle }) {
     });
   }, []);
   const convertationCurrency = () => {
-    console.log(data);
-    // console.log(whereSelectValue[0].viewCcy);
-    // console.log(secondSelectValue[0].viewCcy);
     if (secondSelectValue[0].viewCcy === whereSelectValue[0].viewCcy) {
       setSecondInput(whereInput);
     } else {
@@ -52,19 +49,10 @@ export default function Calculator({ calculator, calculatorHandle }) {
               sortedSecondSelectValue.rateWeight;
             console.log(b);
             setSecondInput(b);
+          } else {
+            setSecondInput(whereInput * item.dgtlBuyRate);
           }
         }
-
-        // if (item.viewCcy === whereSelectValue[0].viewCcy) {
-        //   if (secondSelectValue[0].viewCcy != "GEL") {
-        //     let a = (whereInput * item.dgtlBuyRate) / item.rateWeight;
-        //     let b =
-        //       (a * secondSelectValue[0].dgtlBuyRate) /
-        //       secondSelectValue[0].rateWeight;
-        //     console.log(b);
-        //   }
-        //   setSecondInput((whereInput * item.dgtlBuyRate) / item.rateWeight);
-        // }
       });
     }
   };
