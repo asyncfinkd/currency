@@ -45,7 +45,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
           if (sortedSecondSelectValue.viewCcy != "GEL") {
             let a = (whereInput * item.dgtlBuyRate) / item.rateWeight;
             let b =
-              (a / sortedSecondSelectValue.dgtlBuyRate) *
+              (a / sortedSecondSelectValue.dgtlSellRate) *
               sortedSecondSelectValue.rateWeight;
             setSecondInput(b);
           } else {
