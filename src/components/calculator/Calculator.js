@@ -31,6 +31,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
       viewCcy: "GEL",
       name: "ლარი",
     });
+    console.log(data);
   }, []);
   const convertationCurrency = () => {
     if (secondSelectValue[0].viewCcy === whereSelectValue[0].viewCcy) {
