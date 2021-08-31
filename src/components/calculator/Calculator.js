@@ -37,20 +37,53 @@ export default function Calculator({ calculator, calculatorHandle }) {
       setSecondInput(whereInput);
     } else {
       data.map((item) => {
+        if (whereSelectValue[0].viewCcy === "GEL") {
+          setSortedWhereSelectValue(item);
+          let a =
+            (whereInput / sortedSecondSelectValue.dgtlSellRate) *
+            sortedSecondSelectValue.rateWeight;
+          let toStringA = a.toString();
+          let splitedA = toStringA.split(".");
+          let inputA;
+          if (splitedA.length > 1) {
+            inputA = splitedA[0] + "." + splitedA[1].slice(0, 2);
+          } else {
+            inputA = splitedA[0];
+          }
+          setSecondInput(inputA);
+        } else {
+          if (item.viewCcy === whereSelectValue[0].viewCcy) {
+            setSortedWhereSelectValue(item);
+            if (sortedSecondSelectValue.viewCcy != "GEL") {
+              let a = (whereInput * item.dgtlBuyRate) / item.rateWeight;
+              let b =
+                (a / sortedSecondSelectValue.dgtlSellRate) *
+                sortedSecondSelectValue.rateWeight;
+              let toStringB = b.toString();
+              let splitedB = toStringB.split(".");
+              let inputB;
+              if (splitedB.length > 1) {
+                inputB = splitedB[0] + "." + splitedB[1].slice(0, 2);
+              } else {
+                inputB = splitedB[0];
+              }
+              setSecondInput(inputB);
+            } else {
+              let a = whereInput * item.dgtlBuyRate;
+              let toStringA = a.toString();
+              let splitedA = toStringA.split(".");
+              let inputA;
+              if (splitedA.length > 1) {
+                inputA = splitedA[0] + "." + splitedA[1].slice(0, 2);
+              } else {
+                inputA = splitedA[0];
+              }
+              setSecondInput(inputA);
+            }
+          }
+        }
         if (item.viewCcy === secondSelectValue[0].viewCcy) {
           setSortedSecondSelectValue(item);
-        }
-        if (item.viewCcy === whereSelectValue[0].viewCcy) {
-          setSortedWhereSelectValue(item);
-          if (sortedSecondSelectValue.viewCcy != "GEL") {
-            let a = (whereInput * item.dgtlBuyRate) / item.rateWeight;
-            let b =
-              (a / sortedSecondSelectValue.dgtlSellRate) *
-              sortedSecondSelectValue.rateWeight;
-            setSecondInput(b);
-          } else {
-            setSecondInput(whereInput * item.dgtlBuyRate);
-          }
         }
       });
     }
@@ -245,7 +278,13 @@ export default function Calculator({ calculator, calculatorHandle }) {
                       </div>
                     </div>
                   </div>
-                  <div className="calculator__changeButton">
+                  <div
+                    className="calculator__changeButton"
+                    onClick={() => {
+                      setWhereSelectValue(secondSelectValue);
+                      setSecondSelectValue(whereSelectValue);
+                    }}
+                  >
                     <div className="calculator__changeButtonContent">
                       <div
                         style={{
