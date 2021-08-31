@@ -20,18 +20,29 @@ export default function AppPagesTable({
   }, []);
 
   const getFormattedNum = (num) => {
-    if (num.length == 0) {
-      num = "0.0000";
-    } else if (num.length == 1) {
-      for (let i = 0; i <= 8 - num.length; i++) {
-        if (i == 0) {
-          num += ".";
-        }
+    let numSplited = num.split(".");
+    if (numSplited[0].length == 2) {
+      for (let i = 0; i <= 7 - num.length; i++) {
         num += "0";
       }
-    } else if (num.length != 6) {
-      for (let i = 0; i <= 6 - num.length; i++) {
-        num += "0";
+    } else {
+      if (num.length == 0) {
+        num = "0.0000";
+      } else if (num.length == 1) {
+        for (let i = 0; i <= 8 - num.length; i++) {
+          if (i == 0) {
+            num += ".";
+          }
+          num += "0";
+        }
+      } else if (num.length == 3) {
+        for (let i = 0; i <= 7 - num.length; i++) {
+          num += "0";
+        }
+      } else if (num.length != 6) {
+        for (let i = 0; i <= 6 - num.length; i++) {
+          num += "0";
+        }
       }
     }
     return num;
@@ -109,8 +120,12 @@ export default function AppPagesTable({
         </div>
         <div className="table-cell">
           <div>
-            <div className="table-cell-price-paragraph">{buyRate}</div>
-            <div className="table-cell-price-paragraph">{sellRate}</div>
+            <div className="table-cell-price-paragraph">
+              {getFormattedNum(buyRate.toString())}
+            </div>
+            <div className="table-cell-price-paragraph">
+              {getFormattedNum(sellRate.toString())}
+            </div>
           </div>
         </div>
         <div className="table-cell">
