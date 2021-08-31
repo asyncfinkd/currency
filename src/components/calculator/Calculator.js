@@ -37,7 +37,6 @@ export default function Calculator({ calculator, calculatorHandle }) {
       sellRate: "0",
       difference: "0",
     });
-    console.log(data);
   }, []);
   const convertationCurrency = () => {
     if (secondSelectValue[0].viewCcy === whereSelectValue[0].viewCcy) {
