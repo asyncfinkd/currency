@@ -7,6 +7,12 @@ export default function Calculator({ calculator, calculatorHandle }) {
   const [whereSelectValue, setWhereSelectValue] = React.useState([
     { viewCcy: "USD", name: "აშშ დოლარი" },
   ]);
+  const [secondSelectValue, setSecondSelectValue] = React.useState([
+    {
+      viewCcy: "GEL",
+      name: "ლარი",
+    },
+  ]);
   return (
     <>
       <div is-active={calculator && ""} className="container__calculator">
@@ -277,7 +283,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
                                 ვალუტა
                               </span>
                               <span className="calculator__bottomSection__selectBox__WrapperContainerFlexSpanCourse">
-                                {whereSelectValue[0].name}
+                                {secondSelectValue[0].name}
                               </span>
                             </div>
                             <div
@@ -290,7 +296,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
                               <div className="calculator__logoWrapper">
                                 <div className="calculator__logoWrapperContent">
                                   <span className="calculator__logoWrapperContentSpan">
-                                    {whereSelectValue[0].viewCcy}
+                                    {secondSelectValue[0].viewCcy}
                                   </span>
                                 </div>
                               </div>
