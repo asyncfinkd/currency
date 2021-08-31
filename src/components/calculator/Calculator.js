@@ -19,22 +19,32 @@ export default function Calculator({ calculator, calculatorHandle }) {
   );
   const [whereInput, setWhereInput] = React.useState("");
   const [secondInput, setSecondInput] = React.useState("");
-  // useEffect(() => {
-  //   data.push({
-  //     ccy: "GEL",
-  //     viewCcy: "GEL",
-  //   });
-  // }, []);
+  useEffect(() => {
+    data.push({
+      ccy: "GEL",
+      viewCcy: "GEL",
+      name: "ლარი",
+    });
+  }, []);
   const convertationCurrency = () => {
     console.log(data);
     console.log(whereSelectValue[0].viewCcy);
     console.log(secondSelectValue[0].viewCcy);
-    data.map((item) => {
-      if (item.ccy === whereSelectValue[0].viewCcy) {
-        // console.log(whereInput * item.dgtlBuyRate);
-        setSecondInput(whereInput * item.dgtlBuyRate);
+    if (secondSelectValue[0].viewCcy === whereSelectValue[0].viewCcy) {
+      setSecondInput(whereInput);
+    } else {
+      if (
+        secondSelectValue[0].viewCcy === "GEL" ||
+        whereSelectValue[0].viewCcy === "GEL"
+      ) {
+        data.map((item) => {
+          if (item.ccy === whereSelectValue[0].viewCcy) {
+            // console.log(whereInput * item.dgtlBuyRate);
+            setSecondInput(whereInput * item.dgtlBuyRate);
+          }
+        });
       }
-    });
+    }
   };
   useEffect(() => {
     convertationCurrency();
@@ -183,41 +193,39 @@ export default function Calculator({ calculator, calculatorHandle }) {
                       id="suggestions"
                     >
                       <div className="calculator__suggestions__content">
-                        {Application.data.currencyData.currenciesList.map(
-                          (item) => {
-                            return (
-                              <>
-                                <div
-                                  className="calculator__suggestions__section"
-                                  onClick={() => {
-                                    const empty = (arr) => (arr.length = []);
-                                    empty(whereSelectValue);
-                                    setWhereSelectValue([
-                                      {
-                                        viewCcy: item.viewCcy,
-                                        name: item.name,
-                                      },
-                                    ]);
-                                    setShowWhereSelect(false);
-                                  }}
-                                >
-                                  <div>
-                                    <span className="calculator__suggestions__sectionSpan">
-                                      {item.name}
+                        {data.map((item) => {
+                          return (
+                            <>
+                              <div
+                                className="calculator__suggestions__section"
+                                onClick={() => {
+                                  const empty = (arr) => (arr.length = []);
+                                  empty(whereSelectValue);
+                                  setWhereSelectValue([
+                                    {
+                                      viewCcy: item.viewCcy,
+                                      name: item.name,
+                                    },
+                                  ]);
+                                  setShowWhereSelect(false);
+                                }}
+                              >
+                                <div>
+                                  <span className="calculator__suggestions__sectionSpan">
+                                    {item.name}
+                                  </span>
+                                </div>
+                                <div>
+                                  <div className="calculator__logoWrapperContent">
+                                    <span className="calculator__logoWrapperContentSpan">
+                                      {item.viewCcy}
                                     </span>
                                   </div>
-                                  <div>
-                                    <div className="calculator__logoWrapperContent">
-                                      <span className="calculator__logoWrapperContentSpan">
-                                        {item.viewCcy}
-                                      </span>
-                                    </div>
-                                  </div>
                                 </div>
-                              </>
-                            );
-                          }
-                        )}
+                              </div>
+                            </>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
@@ -391,41 +399,39 @@ export default function Calculator({ calculator, calculatorHandle }) {
                       id="suggestions"
                     >
                       <div className="calculator__suggestions__content">
-                        {Application.data.currencyData.currenciesList.map(
-                          (item) => {
-                            return (
-                              <>
-                                <div
-                                  className="calculator__suggestions__section"
-                                  onClick={() => {
-                                    const empty = (arr) => (arr.length = []);
-                                    empty(secondSelectValue);
-                                    setSecondSelectValue([
-                                      {
-                                        viewCcy: item.viewCcy,
-                                        name: item.name,
-                                      },
-                                    ]);
-                                    setShowSecondSelect(false);
-                                  }}
-                                >
-                                  <div>
-                                    <span className="calculator__suggestions__sectionSpan">
-                                      {item.name}
+                        {data.map((item) => {
+                          return (
+                            <>
+                              <div
+                                className="calculator__suggestions__section"
+                                onClick={() => {
+                                  const empty = (arr) => (arr.length = []);
+                                  empty(secondSelectValue);
+                                  setSecondSelectValue([
+                                    {
+                                      viewCcy: item.viewCcy,
+                                      name: item.name,
+                                    },
+                                  ]);
+                                  setShowSecondSelect(false);
+                                }}
+                              >
+                                <div>
+                                  <span className="calculator__suggestions__sectionSpan">
+                                    {item.name}
+                                  </span>
+                                </div>
+                                <div>
+                                  <div className="calculator__logoWrapperContent">
+                                    <span className="calculator__logoWrapperContentSpan">
+                                      {item.viewCcy}
                                     </span>
                                   </div>
-                                  <div>
-                                    <div className="calculator__logoWrapperContent">
-                                      <span className="calculator__logoWrapperContentSpan">
-                                        {item.viewCcy}
-                                      </span>
-                                    </div>
-                                  </div>
                                 </div>
-                              </>
-                            );
-                          }
-                        )}
+                              </div>
+                            </>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
