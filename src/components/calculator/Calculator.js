@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ApplicationContext } from "../../context/Application/ApplicationContext";
 
 export default function Calculator({ calculator, calculatorHandle }) {
+  const { Application } = useContext(ApplicationContext);
+  const [showWhereSelect, setShowWhereSelect] = React.useState(false);
   return (
     <>
       <div is-active={calculator && ""} className="container__calculator">
@@ -58,7 +61,10 @@ export default function Calculator({ calculator, calculatorHandle }) {
                   </span>
                   <div className="calculator__bottomSection__whereContainer">
                     <input type="text" placeholder="თანხა" />
-                    <div className="calculator__bottomSection__selectBox">
+                    <div
+                      className="calculator__bottomSection__selectBox"
+                      onClick={() => setShowWhereSelect(!showWhereSelect)}
+                    >
                       <div className="calculator__bottomSection__selectBox__Wrapper">
                         <div className="calculator__bottomSection__selectBox__WrapperContainer">
                           <div className="calculator__bottomSection__selectBox__WrapperContainerFlex">
@@ -123,6 +129,36 @@ export default function Calculator({ calculator, calculatorHandle }) {
                             </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <div
+                      isActive={showWhereSelect && "true"}
+                      className="calculator__suggestions"
+                      id="suggestions"
+                    >
+                      <div className="calculator__suggestions__content">
+                        {Application.data.currencyData.currenciesList.map(
+                          (item) => {
+                            return (
+                              <>
+                                <div className="calculator__suggestions__section">
+                                  <div>
+                                    <span className="calculator__suggestions__sectionSpan">
+                                      {item.name}
+                                    </span>
+                                  </div>
+                                  <div>
+                                    <div className="calculator__logoWrapperContent">
+                                      <span className="calculator__logoWrapperContentSpan">
+                                        {item.viewCcy}
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </>
+                            );
+                          }
+                        )}
                       </div>
                     </div>
                   </div>

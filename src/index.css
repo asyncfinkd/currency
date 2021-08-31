@@ -1067,6 +1067,7 @@
 .calculator__bottomSection__whereContainer {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .calculator__bottomSection__whereContainer input {
@@ -1210,6 +1211,72 @@
   margin-left: 4px;
   transition: transform 0.15s ease-in-out;
   color: #b1b1b1;
+}
+
+.calculator__suggestions {
+  transition: opacity 350ms ease-in-out, visibility 350ms ease-in-out;
+  visibility: visible;
+  opacity: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 78px;
+  width: 50%;
+  right: 0;
+  pointer-events: none;
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #646464;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  height: 205px;
+  max-height: 205px;
+}
+
+.calculator__suggestions[isActive="true"] {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.calculator__suggestions__content {
+  max-height: 205px;
+  height: 205px;
+}
+
+#suggestions::-webkit-scrollbar {
+  width: 6px;
+}
+
+#suggestions::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+
+#suggestions::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+  border-radius: 2px;
+}
+
+.calculator__suggestions__section {
+  display: flex;
+  flex-grow: 1;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 57px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.75;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.calculator__suggestions__sectionSpan {
+  display: flex;
+  flex-grow: 1;
+  font-family: MarkGEO;
 }
 
 @media all and (max-width: 1216px) {
