@@ -1277,6 +1277,10 @@
   border-bottom: 1px solid #ebebeb;
 }
 
+.calculator__suggestions__section:hover {
+  background-color: #f9f9f9;
+}
+
 .calculator__suggestions__sectionSpan {
   display: flex;
   flex-grow: 1;
