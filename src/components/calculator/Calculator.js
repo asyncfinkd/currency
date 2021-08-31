@@ -4,6 +4,9 @@ import { ApplicationContext } from "../../context/Application/ApplicationContext
 export default function Calculator({ calculator, calculatorHandle }) {
   const { Application } = useContext(ApplicationContext);
   const [showWhereSelect, setShowWhereSelect] = React.useState(false);
+  const [whereSelectValue, setWhereSelectValue] = React.useState([
+    { ccy: "USD", name: "აშშ დოლარი" },
+  ]);
   return (
     <>
       <div is-active={calculator && ""} className="container__calculator">
@@ -78,7 +81,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
                                 ვალუტა
                               </span>
                               <span className="calculator__bottomSection__selectBox__WrapperContainerFlexSpanCourse">
-                                აშშ დოლარი
+                                {whereSelectValue[0].name}
                               </span>
                             </div>
                             <div
@@ -91,11 +94,14 @@ export default function Calculator({ calculator, calculatorHandle }) {
                               <div className="calculator__logoWrapper">
                                 <div className="calculator__logoWrapperContent">
                                   <span className="calculator__logoWrapperContentSpan">
-                                    USD
+                                    {whereSelectValue[0].ccy}
                                   </span>
                                 </div>
                               </div>
-                              <div className="calculator__selectBoxIcon">
+                              <div
+                                className="calculator__selectBoxIcon"
+                                is-active={showWhereSelect && "true"}
+                              >
                                 <svg
                                   width="12"
                                   height="12px"

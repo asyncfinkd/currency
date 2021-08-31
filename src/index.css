@@ -1213,6 +1213,10 @@
   color: #b1b1b1;
 }
 
+.calculator__selectBoxIcon[is-active="true"] {
+  transform: rotate(180deg);
+}
+
 .calculator__suggestions {
   transition: opacity 350ms ease-in-out, visibility 350ms ease-in-out;
   visibility: visible;
