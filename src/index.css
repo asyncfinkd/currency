@@ -1290,6 +1290,18 @@
   width: 164px;
 }
 
+.actived__diff__rate {
+  color: #00a786;
+}
+
+.svg__diff__rate__active {
+  transform: rotate(180deg);
+}
+
+.active__card__currency {
+  background-color: #00a786;
+}
+
 .calculator__changeButton {
   position: relative;
   display: flex;

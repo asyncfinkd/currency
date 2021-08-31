@@ -11,18 +11,32 @@ export default function AppPagesUtils({
 }) {
   const [active, setActive] = React.useState(false);
 
-  const renderSpan = () => {
-    let toStringDifference = difference.toString();
-    // if (toStringDifference[0] == "-") {
-    setActive(true);
-    // }
-  };
+  // const renderSpan = () => {
+  //   let toStringDifference = difference.toString();
+  //   // if (toStringDifference[0] == "-") {
+  //   setActive(true);
+  //   // }
+  // };
+  React.useEffect(() => {
+    let toStringPoint = difference.toString();
+    if (toStringPoint[0] == "-") {
+      setActive(true);
+    }
+  }, []);
   return (
     <>
       <div className="container-card">
         <div className="card__container">
           <div className="card__head">
-            <div className="card__currency">{ccy}</div>
+            <div
+              className={
+                active
+                  ? "card__currency active__card__currency"
+                  : "card__currency"
+              }
+            >
+              {ccy}
+            </div>
             <span className="card__name">{name}</span>
             <button className="card__button">
               <svg
@@ -58,13 +72,18 @@ export default function AppPagesUtils({
                 <div className="rates__content">
                   <div className="label"></div>
                   <div className="bank__rate">{currentRate}</div>
-                  <div className="diff__rate">
+                  <div
+                    className={
+                      active ? "diff__rate actived__diff__rate" : "diff__rate"
+                    }
+                  >
                     <svg
                       width="48px"
                       height="48px"
                       viewBox="0 0 48 48"
                       version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
+                      className={active && "svg__diff__rate__active"}
                     >
                       <g
                         id="icons-48-system-chevron_up"
@@ -88,7 +107,11 @@ export default function AppPagesUtils({
                         ></path>
                       </g>
                     </svg>
-                    <span className={active && "facebook"}>{renderSpan()}</span>
+                    <span>
+                      {active
+                        ? difference.toString().slice(1, difference.length)
+                        : difference}
+                    </span>
                   </div>
                 </div>
               </div>
