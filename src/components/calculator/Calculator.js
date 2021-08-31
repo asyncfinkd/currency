@@ -1,11 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ApplicationContext } from "../../context/Application/ApplicationContext";
 
 export default function Calculator({ calculator, calculatorHandle }) {
   const { Application } = useContext(ApplicationContext);
-  const [data, setData] = React.useState(
-    Application.data.currencyData.currenciesList
-  );
   const [showWhereSelect, setShowWhereSelect] = React.useState(false);
   const [showSecondSelect, setShowSecondSelect] = React.useState(false);
   const [whereSelectValue, setWhereSelectValue] = React.useState([
@@ -17,8 +14,31 @@ export default function Calculator({ calculator, calculatorHandle }) {
       name: "ლარი",
     },
   ]);
+  const [data, setData] = React.useState(
+    Application.data.currencyData.currenciesList
+  );
   const [whereInput, setWhereInput] = React.useState("");
   const [secondInput, setSecondInput] = React.useState("");
+  // useEffect(() => {
+  //   data.push({
+  //     ccy: "GEL",
+  //     viewCcy: "GEL",
+  //   });
+  // }, []);
+  const convertationCurrency = () => {
+    console.log(data);
+    console.log(whereSelectValue[0].viewCcy);
+    console.log(secondSelectValue[0].viewCcy);
+    data.map((item) => {
+      if (item.ccy === whereSelectValue[0].viewCcy) {
+        // console.log(whereInput * item.dgtlBuyRate);
+        setSecondInput(whereInput * item.dgtlBuyRate);
+      }
+    });
+  };
+  useEffect(() => {
+    convertationCurrency();
+  }, [whereInput, secondInput]);
   return (
     <>
       <div is-active={calculator && ""} className="container__calculator">
