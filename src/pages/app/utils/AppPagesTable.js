@@ -111,7 +111,9 @@ export default function AppPagesTable({
                 </svg>
                 <span>
                   {active
-                    ? difference.toString().slice(1, difference.length)
+                    ? getFormattedNum(
+                        difference.toString().slice(1, difference.length)
+                      )
                     : getFormattedNum(difference.toString())}
                 </span>
               </div>
