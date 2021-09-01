@@ -130,7 +130,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
     sortedWhereSelectValue,
   ]);
   const handleChangeInput = (e) => {
-    const re = /^[0-9\b]+$/; //rules
+    const re = /^[0-9\b]+$/;
     if (e.target.value === "" || re.test(e.target.value)) {
       setWhereInput(e.target.value);
     }
