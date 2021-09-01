@@ -140,7 +140,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
   };
   return (
     <>
-      <div is-active={calculator && ""} className="container__calculator">
+      <div isActive={calculator && "true"} className="container__calculator">
         <div className="calculator__wrapper" onClick={calculatorHandle}></div>
         <div className="calculator__container">
           <div className="calculator__content">
