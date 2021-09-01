@@ -104,6 +104,12 @@ export default function Calculator({ calculator, calculatorHandle }) {
     sortedSecondSelectValue,
     sortedWhereSelectValue,
   ]);
+  const handleChangeInput = (e) => {
+    const re = /^[0-9\b]+$/; //rules
+    if (e.target.value === "" || re.test(e.target.value)) {
+      setWhereInput(e.target.value);
+    }
+  };
   return (
     <>
       <div is-active={calculator && ""} className="container__calculator">
@@ -164,7 +170,9 @@ export default function Calculator({ calculator, calculatorHandle }) {
                       type="text"
                       placeholder="თანხა"
                       value={whereInput}
-                      onChange={(e) => setWhereInput(e.target.value)}
+                      onChange={(e) => {
+                        handleChangeInput(e);
+                      }}
                     />
                     <div
                       className="calculator__bottomSection__selectBox"
