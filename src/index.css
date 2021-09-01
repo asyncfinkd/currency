@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "MarkGEO";
   src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.eot");
@@ -1365,6 +1369,12 @@
   margin-top: 25px;
 }
 
+@media all and (max-width: 1300px) {
+  .calculator__container {
+    width: calc(50vw - 36px);
+  }
+}
+
 @media all and (max-width: 1216px) {
   .container-bottom-section {
     flex-direction: column;
@@ -1391,6 +1401,18 @@
   }
 }
 
+@media all and (max-width: 1200px) {
+  .calculator__container {
+    width: calc(75vw - 42px);
+  }
+}
+
+@media all and (max-width: 800px) {
+  .calculator__container {
+    width: 100vw;
+  }
+}
+
 @media all and (max-width: 768px) {
   .container-flex__titleSPAN[slot="title"] {
     font-size: 24px;
@@ -1400,6 +1422,31 @@
 @media all and (max-width: 720px) {
   .container-main {
     padding: 58px 24px 64px 24px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .calculator__bottomSection__whereContainer {
+    flex-direction: column;
+  }
+  .calculator__bottomSection__whereContainer input {
+    width: 100%;
+  }
+  .calculator__bottomSection__selectBox {
+    width: 100%;
+  }
+  .calculator__responsiveNone {
+    display: none !important;
+  }
+  .calculator__bottomSection__content select {
+    width: 100%;
+  }
+  .calculator__suggestions {
+    width: 100%;
+    top: 144px;
+  }
+  .secondBox {
+    top: 144px !important;
   }
 }
 

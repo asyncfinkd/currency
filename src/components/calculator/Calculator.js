@@ -234,6 +234,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
                                 alignItems: "center",
                                 gap: "10px",
                               }}
+                              className="calculator__responsiveNone"
                             >
                               <div className="calculator__logoWrapper">
                                 <div className="calculator__logoWrapperContent">
@@ -443,6 +444,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
                                 alignItems: "center",
                                 gap: "10px",
                               }}
+                              className="calculator__responsiveNone"
                             >
                               <div className="calculator__logoWrapper">
                                 <div className="calculator__logoWrapperContent">
