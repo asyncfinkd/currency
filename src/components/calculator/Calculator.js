@@ -58,7 +58,6 @@ export default function Calculator({ calculator, calculatorHandle }) {
               inputB = splitedB[0];
             }
             setOneCourse(inputB);
-            console.log(inputB);
           }
           setSortedWhereSelectValue(item);
           let a =
