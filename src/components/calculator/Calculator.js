@@ -46,12 +46,19 @@ export default function Calculator({ calculator, calculatorHandle }) {
       data.map((item) => {
         if (whereSelectValue[0].viewCcy === "GEL") {
           if (item.viewCcy === whereSelectValue[0].viewCcy) {
-            // console.log(1 / item.buyRate);
-            // console.log(sortedSecondSelectValue);
-            console.log(
+            let b =
               (1 / sortedSecondSelectValue.dgtlBuyRate) *
-                sortedSecondSelectValue.rateWeight
-            );
+              sortedSecondSelectValue.rateWeight;
+            let toStringB = b.toString();
+            let splitedB = toStringB.split(".");
+            let inputB;
+            if (splitedB.length > 1) {
+              inputB = splitedB[0] + "." + splitedB[1].slice(0, 2);
+            } else {
+              inputB = splitedB[0];
+            }
+            setOneCourse(inputB);
+            console.log(inputB);
           }
           setSortedWhereSelectValue(item);
           let a =
@@ -128,6 +135,9 @@ export default function Calculator({ calculator, calculatorHandle }) {
     if (e.target.value === "" || re.test(e.target.value)) {
       setWhereInput(e.target.value);
     }
+  };
+  const renderCurrencySpan = () => {
+    return `1 ${whereSelectValue[0].viewCcy} = ${oneCourse} ${secondSelectValue[0].viewCcy}`;
   };
   return (
     <>
@@ -525,7 +535,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
                     </div>
                   </div>
                   <span className="calculator__oneCourseSpan">
-                    1 {whereSelectValue[0].viewCcy} = {oneCourse} GEL
+                    {renderCurrencySpan()}
                   </span>
                 </div>
               </div>
