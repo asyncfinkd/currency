@@ -1350,6 +1350,14 @@
   top: 78px !important;
 }
 
+.calculator__oneCourseSpan {
+  color: #777;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: MarkGEO;
+  margin-top: 25px;
+}
+
 @media all and (max-width: 1216px) {
   .container-bottom-section {
     flex-direction: column;

@@ -516,9 +516,9 @@ export default function Calculator({ calculator, calculatorHandle }) {
                       </div>
                     </div>
                   </div>
-                  <p>
+                  <span className="calculator__oneCourseSpan">
                     1 {whereSelectValue[0].viewCcy} = {oneCourse} GEL
-                  </p>
+                  </span>
                 </div>
               </div>
             </div>
