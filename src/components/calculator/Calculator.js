@@ -185,7 +185,10 @@ export default function Calculator({ calculator, calculatorHandle }) {
               </div>
             </div>
             <div className="calculator__bottomSection">
-              <div className="calculator__bottomSectionContent">
+              <div
+                className="calculator__bottomSectionContent"
+                id="calculator__bottomSectionContent__scroll"
+              >
                 <div className="calculator__bottomSection__content">
                   <select>
                     <option>საბითუმო კურსი</option>
