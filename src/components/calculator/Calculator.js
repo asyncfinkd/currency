@@ -45,6 +45,14 @@ export default function Calculator({ calculator, calculatorHandle }) {
     } else {
       data.map((item) => {
         if (whereSelectValue[0].viewCcy === "GEL") {
+          if (item.viewCcy === whereSelectValue[0].viewCcy) {
+            // console.log(1 / item.buyRate);
+            // console.log(sortedSecondSelectValue);
+            console.log(
+              (1 / sortedSecondSelectValue.dgtlBuyRate) *
+                sortedSecondSelectValue.rateWeight
+            );
+          }
           setSortedWhereSelectValue(item);
           let a =
             (whereInput / sortedSecondSelectValue.dgtlSellRate) *
