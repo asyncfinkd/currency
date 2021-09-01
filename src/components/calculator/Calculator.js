@@ -23,7 +23,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
   const [data, setData] = React.useState(
     Application.data.currencyData.currenciesList
   );
-  const [whereInput, setWhereInput] = React.useState("");
+  const [whereInput, setWhereInput] = React.useState("100");
   const [secondInput, setSecondInput] = React.useState("");
   useEffect(() => {
     data.push({
@@ -379,6 +379,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
                     <input
                       type="text"
                       placeholder="თანხა"
+                      readOnly
                       value={secondInput}
                       onChange={(e) => setSecondInput(e.target.value)}
                     />
