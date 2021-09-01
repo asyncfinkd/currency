@@ -5,6 +5,7 @@ export default function Calculator({ calculator, calculatorHandle }) {
   const { Application } = useContext(ApplicationContext);
   const [showWhereSelect, setShowWhereSelect] = React.useState(false);
   const [showSecondSelect, setShowSecondSelect] = React.useState(false);
+  const [oneCourse, setOneCourse] = React.useState("");
   const [whereSelectValue, setWhereSelectValue] = React.useState([
     { viewCcy: "USD", name: "აშშ დოლარი" },
   ]);
@@ -75,6 +76,16 @@ export default function Calculator({ calculator, calculatorHandle }) {
               }
               setSecondInput(inputB);
             } else {
+              let b = (1 * item.dgtlBuyRate) / item.rateWeight;
+              let toStringB = b.toString();
+              let splitedB = toStringB.split(".");
+              let inputB;
+              if (splitedB.length > 1) {
+                inputB = splitedB[0] + "." + splitedB[1].slice(0, 2);
+              } else {
+                inputB = splitedB[0];
+              }
+              setOneCourse(inputB);
               let a = whereInput * item.dgtlBuyRate;
               let toStringA = a.toString();
               let splitedA = toStringA.split(".");
@@ -505,6 +516,9 @@ export default function Calculator({ calculator, calculatorHandle }) {
                       </div>
                     </div>
                   </div>
+                  <p>
+                    1 {whereSelectValue[0].viewCcy} = {oneCourse} GEL
+                  </p>
                 </div>
               </div>
             </div>
