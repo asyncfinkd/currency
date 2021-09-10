@@ -1519,8 +1519,8 @@ html {
 .scroll__button {
   display: none;
   position: fixed;
-  right: 25px;
-  bottom: 25px;
+  right: 35px;
+  bottom: 45px;
   width: 56px;
   height: 56px;
   border-radius: 50%;
