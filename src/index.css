@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "MarkGEO";
   src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.eot");
@@ -1510,4 +1514,33 @@ body {
     font-size: 10px;
     font-weight: 500;
   }
+}
+
+.scroll__button {
+  display: none;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #5a6670;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease-out;
+  border: none;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.scroll__button svg {
+  width: 15px;
+  color: #fff;
+  height: 15px;
+}
+
+.scroll__button:hover {
+  background-color: #2d3b44;
+  transition: all 0.1s ease-in;
 }
