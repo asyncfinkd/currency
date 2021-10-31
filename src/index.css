@@ -1544,3 +1544,9 @@ html {
   background-color: #2d3b44;
   transition: all 0.1s ease-in;
 }
+
+@media all and (max-width: 1200px) {
+  .all__coursesContainer {
+    display: none !important;
+  }
+}
