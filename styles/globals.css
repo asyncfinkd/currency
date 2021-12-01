@@ -13,391 +13,391 @@ html {
 }
 
 @font-face {
-  font-family: "MarkGEO";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.svg#MarkGEO-Light")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEO';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.svg#MarkGEO-Light')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Light/MarkGEO-Light.eot?#iefix')
+      format('embedded-opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MarkGEO";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.svg#MarkGEO-Regular")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEO';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.svg#MarkGEO-Regular')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Regular/MarkGEO-Regular.eot?#iefix')
+      format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MarkGEO";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.svg#MarkGEO-Medium")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEO';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.svg#MarkGEO-Medium')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Medium/MarkGEO-Medium.eot?#iefix')
+      format('embedded-opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MarkGEO";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.svg#MarkGEO-SemiBold")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEO';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.svg#MarkGEO-SemiBold')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-SemiBold/MarkGEO-SemiBold.eot?#iefix')
+      format('embedded-opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MarkGEO";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.svg#MarkGEO-Bold")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEO';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.svg#MarkGEO-Bold')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEO-Bold/MarkGEO-Bold.eot?#iefix')
+      format('embedded-opentype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MarkGEOCAPS";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.svg#MarkGEOCAPS-Light")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEOCAPS';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.svg#MarkGEOCAPS-Light')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Light/MarkGEOCAPS-Light.eot?#iefix')
+      format('embedded-opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MarkGEOCAPS";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.svg#MarkGEOCAPS-Regular")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEOCAPS';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.svg#MarkGEOCAPS-Regular')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Regular/MarkGEOCAPS-Regular.eot?#iefix')
+      format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MarkGEOCAPS";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.svg#MarkGEOCAPS-Medium")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEOCAPS';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.svg#MarkGEOCAPS-Medium')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Medium/MarkGEOCAPS-Medium.eot?#iefix')
+      format('embedded-opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MarkGEOCAPS";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.svg#MarkGEOCAPS-SemiBold")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEOCAPS';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.svg#MarkGEOCAPS-SemiBold')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-SemiBold/MarkGEOCAPS-SemiBold.eot?#iefix')
+      format('embedded-opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MarkGEOCAPS";
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.eot");
-  src: url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.svg#MarkGEOCAPS-Bold")
-      format("svg"),
-    url("https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.eot?#iefix")
-      format("embedded-opentype");
+  font-family: 'MarkGEOCAPS';
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.eot');
+  src: url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.svg#MarkGEOCAPS-Bold')
+      format('svg'),
+    url('https://webstatic.bog.ge/fonts/markgeo/MarkGEOCAPS-Bold/MarkGEOCAPS-Bold.eot?#iefix')
+      format('embedded-opentype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.woff") format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.svg#BOG-UltraBold")
-      format("svg");
+  font-family: 'BOG';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-UltraBold.svg#BOG-UltraBold')
+      format('svg');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Black.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Black.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Black.woff2") format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Black.woff") format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Black.ttf") format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Black.svg#BOG-Black")
-      format("svg");
+  font-family: 'BOG';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Black.svg#BOG-Black')
+      format('svg');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Bold.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Bold.woff2") format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Bold.woff") format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Bold.ttf") format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Bold.svg#BOG-Bold")
-      format("svg");
+  font-family: 'BOG';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Bold.svg#BOG-Bold')
+      format('svg');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG Headline";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.svg#BOG-Headline-Medium")
-      format("svg");
+  font-family: 'BOG Headline';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.svg#BOG-Headline-Medium')
+      format('svg');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff2") format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff") format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Regular.ttf") format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Regular.svg#BOG-Regular")
-      format("svg");
+  font-family: 'BOG';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.svg#BOG-Regular')
+      format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG Headline";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.svg#BOG-Headline-Black")
-      format("svg");
+  font-family: 'BOG Headline';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Black.svg#BOG-Headline-Black')
+      format('svg');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Medium.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Medium.woff2") format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Medium.woff") format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Medium.ttf") format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Medium.svg#BOG-Medium")
-      format("svg");
+  font-family: 'BOG';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Medium.svg#BOG-Medium')
+      format('svg');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG Headline";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.svg#BOG-Headline-Regular")
-      format("svg");
+  font-family: 'BOG Headline';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Regular.svg#BOG-Headline-Regular')
+      format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG Headline";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.svg#BOG-Headline-Light")
-      format("svg");
+  font-family: 'BOG Headline';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Light.svg#BOG-Headline-Light')
+      format('svg');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG Headline";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.svg#BOG-Headline-UltraBold")
-      format("svg");
+  font-family: 'BOG Headline';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-UltraBold.svg#BOG-Headline-UltraBold')
+      format('svg');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG Headline";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.svg#BOG-Headline-SemiBold")
-      format("svg");
+  font-family: 'BOG Headline';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-SemiBold.svg#BOG-Headline-SemiBold')
+      format('svg');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG Headline";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.woff2")
-      format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.woff")
-      format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.svg#BOG-Headline-Bold")
-      format("svg");
+  font-family: 'BOG Headline';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.woff2')
+      format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.woff')
+      format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Bold.svg#BOG-Headline-Bold')
+      format('svg');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff2") format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff") format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.ttf")
-      format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.svg#BOG-SemiBold")
-      format("svg");
+  font-family: 'BOG';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.ttf')
+      format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.svg#BOG-SemiBold')
+      format('svg');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "BOG";
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Light.eot");
-  src: url("https://webstatic.bog.ge/fonts/BOG/BOG-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Light.woff2") format("woff2"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Light.woff") format("woff"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Light.ttf") format("truetype"),
-    url("https://webstatic.bog.ge/fonts/BOG/BOG-Light.svg#BOG-Light")
-      format("svg");
+  font-family: 'BOG';
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.eot');
+  src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Light.svg#BOG-Light')
+      format('svg');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -437,7 +437,7 @@ html {
   margin-bottom: 32px;
 }
 
-.container-flex__titleSPAN[slot="title"] {
+.container-flex__titleSPAN[slot='title'] {
   font-family: MarkGEOCAPS;
   font-size: 32px;
   font-weight: bold;
@@ -448,7 +448,7 @@ html {
   color: #ffffff;
 }
 
-.container-flex__titleSPAN[slot="date"] {
+.container-flex__titleSPAN[slot='date'] {
   font-family: MarkGEO;
   font-size: 12px;
   font-weight: 600;
@@ -464,7 +464,7 @@ html {
   flex-direction: column;
 }
 
-.container__button[slot="calculator__btn"] {
+.container__button[slot='calculator__btn'] {
   color: rgba(255, 255, 255, 0.92);
   background-color: #ff600a;
   text-transform: uppercase;
@@ -488,12 +488,12 @@ html {
   overflow: hidden;
 }
 
-.container__button[slot="calculator__btn"]:hover {
+.container__button[slot='calculator__btn']:hover {
   background-color: #ff6c1d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.container__button[slot="calculator__btn"] svg {
+.container__button[slot='calculator__btn'] svg {
   width: 16px;
   height: 16px;
 }
@@ -945,11 +945,11 @@ html {
   z-index: 1000;
 }
 
-.container__calculator[isActive="true"] {
+.container__calculator[isActive='true'] {
   right: 0px;
 }
 
-.container__calculator[isActive="true"] .calculator__container {
+.container__calculator[isActive='true'] .calculator__container {
   right: 0;
 }
 
@@ -1038,7 +1038,7 @@ html {
 
 .calculator__header__title__wrapper span {
   font-weight: 500;
-  font-family: "BOG Headline";
+  font-family: 'BOG Headline';
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -1182,7 +1182,7 @@ html {
   font-size: 14px;
 }
 
-.container__calculator[isActive="true"] .calculator__wrapper {
+.container__calculator[isActive='true'] .calculator__wrapper {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -1230,7 +1230,7 @@ html {
   color: #b1b1b1;
 }
 
-.calculator__selectBoxIcon[is-active="true"] {
+.calculator__selectBoxIcon[is-active='true'] {
   transform: rotate(180deg);
 }
 
@@ -1257,7 +1257,7 @@ html {
   z-index: 9999;
 }
 
-.calculator__suggestions[isActive="true"] {
+.calculator__suggestions[isActive='true'] {
   opacity: 1;
   pointer-events: visible;
 }
@@ -1395,7 +1395,7 @@ html {
     align-items: flex-start;
     margin-bottom: 24px;
   }
-  .container__button[slot="calculator__btn"] {
+  .container__button[slot='calculator__btn'] {
     margin-left: 0;
     margin-top: 24px;
   }
@@ -1418,7 +1418,7 @@ html {
 }
 
 @media all and (max-width: 768px) {
-  .container-flex__titleSPAN[slot="title"] {
+  .container-flex__titleSPAN[slot='title'] {
     font-size: 24px;
   }
 }
