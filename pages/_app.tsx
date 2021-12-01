@@ -5,11 +5,11 @@ import NProgress from "nprogress";
 import type { AppProps } from "next/app";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-import { isServer } from "../shared/is-server";
-import { PageComponent } from "../types/_app";
+import { isServer } from "shared/is-server";
+import { PageComponent } from "types/_app";
 import { ToastContainer } from "react-toastify";
 
-import "../styles/globals.css";
+import "styles/globals.css";
 import "nprogress/nprogress.css";
 import "react-toastify/dist/ReactToastify.css";
 
